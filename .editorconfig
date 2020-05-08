@@ -1,0 +1,13 @@
+# 表明是最顶层的配置文件，发现设为true时，才会停止查找.editorconfig文件
+root = true
+
+[*]
+indent_style = space
+indent_size = 2
+charset = utf-8
+# 是否将行尾空格自动删除
+trim_trailing_whitespace = false 
+# 是否使文件以一个空白行结尾
+insert_final_newline = false
+# 换行符的类型。lf, cr, crlf三种
+end_of_line = crlf

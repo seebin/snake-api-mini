@@ -1,0 +1,37 @@
+{
+  "name": "mock-data",
+  "version": "1.1.1",
+  "description": "小型API 挡板接口管理工程 -基于反向代理的前端mock方案-前后端之间架起一座过滤桥梁",
+  "main": "./server/application.js",
+  "scripts": {
+    "serve": "nodemon ./server/application.js",
+    "release": "standard-version ",
+    "start": "cd client && npm start",
+    "build": "cd client && npm run build"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "author": "seebin",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.19.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "http-proxy": "^1.17.0",
+    "jsonwebtoken": "^8.5.1",
+    "mockjs": "^1.0.1-beta3",
+    "mongoose": "^5.5.4",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "husky": "^2.4.1",
+    "nodemon": "^1.18.11",
+    "standard-version": "^7.1.0"
+  }
+}
